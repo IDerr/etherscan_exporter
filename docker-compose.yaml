@@ -3,6 +3,6 @@ version: '2'
 services:
   etherscan_exporter:
     container_name: etherscan_exporter
-    build: .
+    image: "iderr/etherscan_exporter:v0.0.1"
     ports:
       - "9142:9142"
