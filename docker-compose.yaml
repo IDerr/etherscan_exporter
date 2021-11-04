@@ -3,7 +3,7 @@ version: '2'
 services:
   etherscan_exporter:
     container_name: etherscan_exporter
-    image: "iderr/etherscan_exporter:v0.0.1"
+    image: "iderr/etherscan_exporter:v0.0.2"
     env_file:
       - .env
     ports:
