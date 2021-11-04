@@ -97,6 +97,9 @@ func main() {
 	if chain == "kovan" {
 		es = etherscan.New(etherscan.Kovan, apikey)
 	}
+	if chain == "goerli" {
+		es = etherscan.New(etherscan.Goerli, apikey)
+	}
 	flag.Parse()
 
 	exporter := NewExporter(chain)
